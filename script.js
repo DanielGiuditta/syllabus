@@ -1,4 +1,4 @@
-document.querySelectorAll('.section h1').forEach(header => {
+document.querySelectorAll('.section h2').forEach(header => {
     header.addEventListener('click', function() {
         const content = this.nextElementSibling;
         const wrapper = content.querySelector('.content-wrapper');
