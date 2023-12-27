@@ -1,17 +1,17 @@
 document.querySelectorAll('.section h1').forEach(header => {
     header.addEventListener('click', function() {
-        const section = this.parentElement;
         const content = this.nextElementSibling;
         const wrapper = content.querySelector('.content-wrapper');
 
-        if (section.classList.contains('open')) {
+        if (content.style.height) {
             // Collapse section
-            content.style.height = '0';
+            content.style.height = null;
         } else {
             // Expand section
             content.style.height = wrapper.scrollHeight + 'px';
         }
 
-        section.classList.toggle('open');
+        // Toggles the 'open' class on the section
+        this.parentElement.classList.toggle('open');
     });
 });
