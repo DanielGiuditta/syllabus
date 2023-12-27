@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expandable Sections</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="default-style.css" id="default-style">
+    <link rel="stylesheet" href="style1.css" id="style1" disabled>
+    <link rel="stylesheet" href="style2.css" id="style2" disabled>
 </head>
 <body>
     <h1>Core 2 Interaction: Lab</h1>
@@ -55,6 +58,13 @@
             </div>
         </div>
     </div>
+
+    <select id="style-selector">
+        <option value="default-style">Default Style</option>
+        <option value="style1">Style 1</option>
+        <option value="style2">Style 2</option>
+        <!-- Add more options as needed -->
+      </select>
 
     <script src="script.js"></script>
 </body>

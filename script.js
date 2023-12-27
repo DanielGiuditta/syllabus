@@ -15,3 +15,13 @@ document.querySelectorAll('.section h2').forEach(header => {
         this.parentElement.classList.toggle('open');
     });
 });
+
+document.getElementById('style-selector').addEventListener('change', function() {
+    switchStylesheet(this.value);
+});
+
+function switchStylesheet(styleId) {
+    document.querySelectorAll("link[rel='stylesheet']").forEach(link => {
+        link.disabled = (link.id !== styleId);
+    });
+}
