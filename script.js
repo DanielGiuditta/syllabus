@@ -16,6 +16,7 @@ document.querySelectorAll('.section h2').forEach(header => {
     });
 });
 
+// style selector
 document.getElementById('style-selector').addEventListener('change', function() {
     switchStylesheet(this.value);
 });
