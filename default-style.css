@@ -39,7 +39,17 @@ h2 {
     font-family: sans-serif;
     /* Add more styling as needed */
 }
+hr{
+    border-top: 1px dotted red;
+}
 
 .content {
     font-family: sans-serif;
+}
+#style-selector{
+    background-color: rgb(255, 255, 255);
+    padding:  1em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+    border: none;
 }
