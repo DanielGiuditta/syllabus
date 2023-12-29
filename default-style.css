@@ -28,10 +28,18 @@ body{
     transition: height 0.3s ease;
 }
 
-#title{
+#header{
     box-shadow: none;
     background-color: rgb(248, 248, 248);
     padding-left: 0;
+}
+#meta-header{
+    font-family: system-ui, -apple-system,'Helvetica Neue', sans-serif;
+    margin-top: -1.25em;
+    color: rgba(0, 0, 0, 0.5);
+    font-size:normal;
+    font-weight: 500;
+    line-height: 1.25em;
 }
 
 h1{
@@ -46,14 +54,6 @@ h2 {
     font-family: system-ui, -apple-system,'Helvetica Neue', sans-serif;
     font-weight: 700;
 }
-h4{
-    font-family: system-ui, -apple-system,'Helvetica Neue', sans-serif;
-    margin-top: -1.25em;
-    color: rgba(0, 0, 0, 0.5);
-    font-size:normal;
-    font-weight: 500;
-    line-height: 1.5em;
-}
 hr{
     border-top: 1px dotted red;
 }
@@ -63,9 +63,12 @@ hr{
 }
 #style-selector{
     background-color: rgb(255, 255, 255);
-    padding:  1em;
+    color: rgb(0, 119, 255);
+    padding: 1em;
+    padding-right: 2em; /* Increased right padding for the arrow */
     border-radius: 1em;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
     border: none;
     font-weight: 800;
+    margin-bottom: 1em;
 }

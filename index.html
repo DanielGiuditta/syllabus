@@ -6,15 +6,28 @@
     <title>Expandable Sections</title>
 <!-- Styles -->
     <link rel="stylesheet" href="default-style.css" id="default-style">
-    <link rel="stylesheet" href="style1.css" id="style1" disabled>
+    <link rel="stylesheet" href="student1.css" id="student1" disabled>
     <link rel="stylesheet" href="style2.css" id="style2" disabled>
 </head>
 <body>
-    <div class="section" id="title">
+    <div class="section" id="header">
         <h1>Core 2 Interaction: Lab</h1>
-        <h4>Course Homepage for Section E, Spring 2023 <br>
-        Wednesdays, 9:00 – 11:40 a.m. 2 W. 13th St., Rm. 811</h4>
+    
+        <p id="meta-header">
+            &#10022; Course Homepage for Section E, 
+            &#10022; Spring 2023 
+            &#10022; Fridays, 9:00 – 11:40 a.m. 
+            &#10022; 2 W. 13th St., Rm. 811
+            &#10022; </p>
     </div>
+
+    <!-- Style Selector -->
+    <select id="style-selector">
+        <option value="default-style">Dan's Style</option>
+        <option value="student1">Student 1</option>
+        <option value="style2">No Style</Style></option>
+        <!-- Add more options as needed -->
+      </select>
 
     <div class="section" id="resources">
         <h2>Resources 📚
@@ -81,13 +94,6 @@
     </div>
    
     
-<!-- Style Selector -->
-    <select id="style-selector">
-        <option value="default-style">Dan's</option>
-        <option value="style1">Style 1</option>
-        <option value="style2">Default</option>
-        <!-- Add more options as needed -->
-      </select>
 
     <script src="script.js"></script>
 </body>
