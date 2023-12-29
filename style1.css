@@ -1,8 +1,8 @@
-
-
 body{
-    background-color: rgb(248, 248, 248);
+    background-color: #000000;
     padding: .5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .subject{
@@ -29,6 +29,7 @@ body{
 }
 
 h1{
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
     font-weight: 800;
     font-size: 2.5em;
@@ -42,4 +43,37 @@ h2 {
 
 .content {
     font-family: sans-serif;
+}
+
+#title {
+    order: 0;
+    background-color: crimson;
+}
+
+#resources {
+    order: 4; /* This will move the Resources section to the top */
+}
+
+#week1 {
+    order: 3;
+}
+
+#week2 {
+    order: 2;
+}
+
+#week3 {
+    order: 1;
+
+}
+#style-selector{
+    order: 5;
+    background-color: rgb(255, 255, 255);
+    padding:  1em;
+    border-radius: 1em;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+    border: none;
+    display: inline-block;
+    font-weight: 800;
+    align-self: flex-start;
 }

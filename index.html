@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expandable Sections</title>
-    <link rel="stylesheet" href="style.css">
+<!-- Styles -->
+    <link rel="stylesheet" href="default-style.css" id="default-style">
+    <link rel="stylesheet" href="style1.css" id="style1" disabled>
+    <link rel="stylesheet" href="style2.css" id="style2" disabled>
 </head>
 <body>
-    <div class="section">
-        <h1>
-            <span class="arrow-container">
-                <span class="arrow">&#9654;</span>
-            </span> Week 1: <span class="subject">HTML</span> 🔗
-        </h1>
+    <div class="section" id="title">
+        <h1>Core 2 Interaction: Lab</h1>
+    </div>
+
+    <div class="section" id="resources">
+        <h2>Resources 📚
+        </h2>
         <div class="content">
             <div class="content-wrapper">
                 <p>This is a paragraph for Section 1.</p>
@@ -26,12 +30,25 @@
         </div>
     </div>
 
-    <div class="section">
-        <h1>
-            <span class="arrow-container">
-                <span class="arrow">&#9654;</span>
-            </span> Week 2: <span class="subject">CSS</span> 🖌️
-        </h1>
+    <div class="section" id="week1">
+        <h2>Week 1: <span class="subject">HTML</span> 🔗
+        </h2>
+        <div class="content">
+            <div class="content-wrapper">
+                <p>This is a paragraph for Section 1.</p>
+                <ul>
+                    <li>List item 1</li>
+                    <li>List item 2</li>
+                    <li>List item 3</li>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="week2">
+        <h2>Week 2: <span class="subject">CSS</span> 🖌️
+        </h2>
         <div class="content">
             <div class="content-wrapper">
                 <p>This is a paragraph for Section 2.</p>
@@ -45,12 +62,9 @@
         </div>
     </div>
 
-    <div class="section">
-        <h1>
-            <span class="arrow-container">
-                <span class="arrow">&#9654;</span>
-            </span> Week 3: <span class="subject">Layout</span> 📰
-        </h1>
+    <div class="section" id="week3">
+        <h2>Week 3: <span class="subject">Layout</span> 📰
+        </h2>
         <div class="content">
             <div class="content-wrapper">
                 <p>This is a paragraph for Section 3.</p>
@@ -63,6 +77,15 @@
             </div>
         </div>
     </div>
+   
+    
+<!-- Style Selector -->
+    <select id="style-selector">
+        <option value="default-style">Dan's</option>
+        <option value="style1">Style 1</option>
+        <option value="style2">Default</option>
+        <!-- Add more options as needed -->
+      </select>
 
     <script src="script.js"></script>
 </body>
